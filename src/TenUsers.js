@@ -25,7 +25,8 @@ class TenUsers extends React.Component {
                     this.state.users.map((user) => (
                         <div
                             key={user.login.uuid}>
-                            {user.name.first} {user.name.last}
+                            {user.name.first} {user.name.last} {user.email}
+                            <img src={user.picture.medium} alt="user"></img>
                         </div>
                     ))
                 }
